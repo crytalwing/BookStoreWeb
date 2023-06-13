@@ -1,0 +1,12 @@
+@charset "UTF-8";
+.bgcolor
+{
+    background-color: #EBC3C1 !important;
+}
+.text-st{
+	display: block;
+     text-overflow: 
+     ellipsis; width: 200px; 
+     overflow: hidden; 
+     white-space: nowrap;
+}

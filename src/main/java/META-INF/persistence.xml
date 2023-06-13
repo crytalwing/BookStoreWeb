@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+
+          http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+
+	version="2.1">
+	<persistence-unit name="JPAServletSQL">
+		<class>soen.eighteen.Entity.Account</class>
+		<class>soen.eighteen.Entity.Book</class>
+		<class>soen.eighteen.Entity.Category</class>
+		<class>soen.eighteen.Entity.CategoryDetail</class>
+		<class>soen.eighteen.Entity.Customer</class>
+		<class>soen.eighteen.Entity.Employee</class>
+		<class>soen.eighteen.Entity.Order</class>
+		<class>soen.eighteen.Entity.OrderDetail</class>
+		<class>soen.eighteen.Entity.Publisher</class>
+<!-- <class></class> -->
+		<properties>
+
+			<property name="javax.persistence.jdbc.url"
+				value="jdbc:sqlserver://localhost:1433;databaseName=BookStore" />
+			<!-- user=sa;password=1234567@a$ -->
+
+			<property name="javax.persistence.jdbc.driver"
+				value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
+
+			<property name="javax.persistence.jdbc.user" value="mike" />
+
+			<property name="javax.persistence.jdbc.password"
+				value="123456" />
+
+			<property name="hibernate.show_sql" value="true" />
+
+			<property name="hibernate.format_sql" value="true" />
+
+			<property name="hibernate.hbm2ddl.auto" value="update"  />
+
+			<property name="hibernate.dialect"
+				value="org.hibernate.dialect.SQLServer2012Dialect" />
+
+		</properties>
+
+	</persistence-unit>
+
+</persistence>
